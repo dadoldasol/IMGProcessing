@@ -22,6 +22,7 @@ public:
 
 public:
 	IppDib* m_pNewDib;
+	CMultiDocTemplate* m_pImageDocTemplate;
 
 	// 재정의입니다.
 public:
@@ -39,6 +40,7 @@ public:
 	DECLARE_MESSAGE_MAP()
 	afx_msg void OnEditPaste();
 	afx_msg void OnUpdateEditPaste(CCmdUI *pCmdUI);
+	afx_msg void OnWindowCloseall();
 };
 
 extern CImageToolApp theApp;
